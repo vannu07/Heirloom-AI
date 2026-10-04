@@ -1,7 +1,7 @@
 ---
 title: "Heirloom AI: Preserving Grandpa's Voice Recipes with Open-Weight Gemma AI & ElevenLabs"
 published: false
-tags: devchallenge, weekendchallenge, hf26challenge, hacktoberfest, ai, webdev
+tags: devchallenge, weekendchallenge, hf26challenge, hacktoberfest
 ---
 
 *This is a submission for the [Hacktoberfest Weekend Challenge: Build for a Friend](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01)*
@@ -14,7 +14,7 @@ However, voice notes are unstructured, contain rambling family anecdotes, and la
 It also features a **Hands-Free Kitchen Companion** with voice commands ("Next step", "Repeat") and natural voice audio readout so anyone in the kitchen can cook Grandpa's recipes hands-free without getting screens greasy!
 
 ## Demo
-- **Live App Running at**: `http://localhost:5173`
+- **Live Deployed App**: https://heirloom-ai-pi.vercel.app/
 - **Key Senior Interactive Features**:
   1. 🎙️ **Voice Memory Studio**: Live microphone audio recorder with dynamic HTML5 Canvas waveform visualizer, persona selectors, and Gemma 4-bit prompt extraction pipeline.
   2. 📖 **The Heirloom Vault**: Scalable recipe gallery with unit converter (Metric vs. US Imperial), serving multiplier (1x, 2x, 3x), Recharts flavor profile radar chart, macro nutrient cards, and printable heirloom recipe card modal generator.
@@ -22,17 +22,20 @@ It also features a **Hands-Free Kitchen Companion** with voice commands ("Next s
   4. 💡 **Open Innovation & Benchmarks**: Technical deep-dive with Recharts benchmark visualizations comparing on-device Gemma 4-bit latency and privacy against closed cloud models.
 
 ## Code
-Project source code structure:
-- [`src/App.jsx`](file:///d:/Hacktoberfest/Dev%20challenge%201/src/App.jsx): Main layout container & state manager with Framer Motion AnimatePresence and Toast system.
-- [`src/components/VoiceStudio.jsx`](file:///d:/Hacktoberfest/Dev%20challenge%201/src/components/VoiceStudio.jsx): Audio recorder & Gemma 4-bit extraction pipeline.
-- [`src/components/RecipeVault.jsx`](file:///d:/Hacktoberfest/Dev%20challenge%201/src/components/RecipeVault.jsx): Recipe gallery with serving scaler, unit converter, Recharts flavor radar, and printable cards.
-- [`src/components/CookingMode.jsx`](file:///d:/Hacktoberfest/Dev%20challenge%201/src/components/CookingMode.jsx): Hands-free voice cooking assistant & timer.
-- [`src/components/OpenInnovationTab.jsx`](file:///d:/Hacktoberfest/Dev%20challenge%201/src/components/OpenInnovationTab.jsx): Judge technical deep-dive with latency benchmarks.
+Project source code repository:
+{% github https://github.com/vannu07/Heirloom-AI %}
+
+- [`src/App.jsx`](https://github.com/vannu07/Heirloom-AI/blob/main/src/App.jsx): Main layout container & state manager with Framer Motion AnimatePresence and Toast system.
+- [`src/components/VoiceStudio.jsx`](https://github.com/vannu07/Heirloom-AI/blob/main/src/components/VoiceStudio.jsx): Audio recorder & Gemma 4-bit extraction pipeline.
+- [`src/components/RecipeVault.jsx`](https://github.com/vannu07/Heirloom-AI/blob/main/src/components/RecipeVault.jsx): Recipe gallery with serving scaler, unit converter, Recharts flavor radar, and printable cards.
+- [`src/components/CookingMode.jsx`](https://github.com/vannu07/Heirloom-AI/blob/main/src/components/CookingMode.jsx): Hands-free voice cooking assistant & timer.
+- [`src/components/OpenInnovationTab.jsx`](https://github.com/vannu07/Heirloom-AI/blob/main/src/components/OpenInnovationTab.jsx): Judge technical deep-dive with latency benchmarks.
 
 ## How I Built It
 - **Open-Source AI Core**: Powered by open-weight **Gemma 2 / Gemma 4-bit local inference** models. The Gemma model takes raw speech-to-text transcripts, parses vague measurements into precise quantities, and structures the output into standardized JSON.
-- **Frontend Stack**: Vite, React 19, Framer Motion for fluid layout animations, Recharts for data visualizations, Newsreader serif & Plus Jakarta Sans typography, JetBrains Mono code fonts.
+- **Frontend Stack**: Vite, React 19, Tailwind CSS v4, Framer Motion for fluid layout animations, Recharts for data visualizations, Playfair Display & Plus Jakarta Sans typography, Fira Code fonts.
 - **Voice Synthesis & Control**: ElevenLabs & Web Speech API for natural step-by-step audio readout and hands-free voice commands.
+- **Audio Visualizers**: HTML5 Canvas API with real-time waveform rendering and Web Audio API ambient kitchen simmer sound generator.
 
 ## Why Does Open Innovation Matter?
 Open innovation was essential for building **Heirloom AI**:
