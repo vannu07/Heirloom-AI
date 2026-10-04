@@ -5,7 +5,7 @@
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-heirloom--ai--pi.vercel.app-d97706?style=for-the-badge&logo=vercel)](https://heirloom-ai-pi.vercel.app/)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-vannu07%2FHeirloom--AI-181717?style=for-the-badge&logo=github)](https://github.com/vannu07/Heirloom-AI)
-[![Hacktoberfest 2026](https://img.shields.io/badge/Hacktoberfest-2026%20Winner-f59e0b?style=for-the-badge&logo=hacktoberfest)](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01)
+[![Hacktoberfest 2026](https://img.shields.io/badge/Hacktoberfest-2026%20Project-f59e0b?style=for-the-badge&logo=hacktoberfest)](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01)
 [![Gemma AI](https://img.shields.io/badge/Open--Weight-Gemma%204--bit-10b981?style=for-the-badge&logo=google)](https://ai.google.dev/gemma)
 
 <br />
